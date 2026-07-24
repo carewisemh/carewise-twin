@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+
+  --primary: #0f766e;
+  --secondary: #14b8a6;
+
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #f0fdfa,
+    #f8fafc
+  );
+
+  color: var(--foreground);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+
+  min-height: 100vh;
+}
+
+button {
+  transition: all .2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(.98);
+}

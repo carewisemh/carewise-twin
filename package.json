@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@next/swc-win32-x64-msvc": "^16.2.11",
+    "@ontomorph/dtp-sdk": "^0.1.3"
+  }
+}
